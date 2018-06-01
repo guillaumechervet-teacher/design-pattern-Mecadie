@@ -59,7 +59,7 @@ namespace BasketTest
         {
             
             var basketTestBasketLineArticles = basketTest.BasketLineArticles;
-            var amountTotal = Imperative.CalculateAmountTotal(basketTestBasketLineArticles);
+            var amountTotal = ImperativeProgramming.CalculateBasketAmount(basketTestBasketLineArticles);
             Assert.AreEqual(amountTotal, basketTest.ExpectedPrice);
         }
     }
